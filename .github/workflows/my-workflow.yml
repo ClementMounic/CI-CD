@@ -23,9 +23,9 @@ jobs:
         image: postgres:latest
         # Provide the password for postgres
         env:
-          POSTGRES_DB: "cicd_database"
-          POSTGRES_USER: "cicd_user"
-          POSTGRES_PASSWORD: "cicd_password"
+          POSTGRES_DB: ${{secrets.DB_NAME}}
+          POSTGRES_USER: ${{secrets.DB_USER}}
+          POSTGRES_PASSWORD: ${{secrets.DB_PASSWORD}}
         ports:
           - 5432:5432
         # Set health checks to wait until postgres has started
