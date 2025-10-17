@@ -1,6 +1,6 @@
 # Lab DevOps - GitHub CICD #1
 
-## TP - Intégration continue aaa
+## TP - Intégration continue
 
 > [!WARNING]
 > Prérequis :
